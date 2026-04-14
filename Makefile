@@ -1,14 +1,19 @@
-.PHONY: install test lint format
+.PHONY: install test lint format build publish
 
 install:
-	python -m pip install -e '.[dev]'
+	poetry install --with dev
 
 test:
-	python -m pytest
+	poetry run pytest
 
 lint:
-	python -m ruff check .
+	poetry run ruff check .
 
 format:
-	python -m ruff format .
+	poetry run ruff format .
 
+build:
+	poetry build
+
+publish:
+	poetry publish

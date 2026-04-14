@@ -7,4 +7,3 @@ from righttekit.version import __version__
 def version_command() -> None:
     """Print the RightTeKit version."""
     click.echo(__version__)
-

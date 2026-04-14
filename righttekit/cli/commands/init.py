@@ -26,6 +26,7 @@ from righttekit.cli.utils import echo_info, echo_success
 def init_command(name: str, project_type: str, directory: Path) -> None:
     """Scaffold a new service project."""
     echo_info(f"Creating {project_type} service '{name}'")
-    destination = scaffold_project(name=name, project_type=project_type, base_dir=directory)
+    destination = scaffold_project(
+        name=name, project_type=project_type, base_dir=directory
+    )
     echo_success(f"Project created at {destination}")
-
