@@ -18,5 +18,7 @@ def test_fastapi_scaffolder_renders_files(tmp_path: Path) -> None:
 
     assert destination.name == "billing-api"
     assert (destination / "main.py").exists()
-    assert 'title="Billing Api"' in (destination / "main.py").read_text(encoding="utf-8")
+    assert 'title="Billing Api"' in (destination / "main.py").read_text(
+        encoding="utf-8"
+    )
     assert "billing-api" in (destination / "README.md").read_text(encoding="utf-8")

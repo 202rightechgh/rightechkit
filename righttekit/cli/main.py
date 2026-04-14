@@ -15,4 +15,3 @@ cli.add_command(init_command)
 cli.add_command(launch_command)
 cli.add_command(version_command)
 cli.add_command(test_command)
-

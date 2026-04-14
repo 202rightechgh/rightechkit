@@ -17,4 +17,3 @@ def echo_warning(message: str) -> None:
 
 def project_root() -> Path:
     return Path.cwd()
-

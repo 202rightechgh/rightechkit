@@ -36,4 +36,3 @@ class UvicornLauncher(BaseLauncher):
         raise FileNotFoundError(
             "Could not infer an ASGI app. Pass --app explicitly, for example --app main:app."
         )
-

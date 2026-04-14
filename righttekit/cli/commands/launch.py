@@ -16,7 +16,8 @@ def launch_command(
     reload: bool,
 ) -> None:
     """Launch a local ASGI application with Uvicorn."""
-    launcher = UvicornLauncher(app_target=app_target, host=host, port=port, reload=reload)
+    launcher = UvicornLauncher(
+        app_target=app_target, host=host, port=port, reload=reload
+    )
     echo_info(f"Launching {launcher.app_target} on http://{host}:{port}")
     launcher.run()
-

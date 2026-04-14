@@ -33,4 +33,3 @@ class FastAPIServiceScaffolder(ProjectScaffolder):
     @staticmethod
     def _titleize(name: str) -> str:
         return name.strip().replace("-", " ").replace("_", " ").title()
-

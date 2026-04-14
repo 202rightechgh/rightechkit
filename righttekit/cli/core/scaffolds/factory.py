@@ -16,4 +16,3 @@ class ProjectScaffolderFactory:
 def scaffold_project(name: str, project_type: str, base_dir: Path) -> Path:
     scaffolder = ProjectScaffolderFactory.create(project_type)
     return scaffolder.scaffold(name=name, base_dir=base_dir)
-
